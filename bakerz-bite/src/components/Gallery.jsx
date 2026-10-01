@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { asset } from '../data/catalog.js';
 import { Reveal, SectionHead } from './ui.jsx';
 
@@ -10,6 +10,8 @@ export default function Gallery({ gallery }) {
   );
   const [tag, setTag] = useState('All');
   const [openAt, setOpenAt] = useState(null);
+  const lightboxRef = useRef(null);
+  const restoreFocusRef = useRef(null);
 
   const shown = tag === 'All' ? gallery : gallery.filter((g) => g.tag === tag);
 
@@ -29,6 +31,19 @@ export default function Gallery({ gallery }) {
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, [openAt, step]);
+
+  // Move focus into the lightbox when it opens and hand it back to the thumbnail
+  // on close, so keyboard users are not dumped at the top of the document.
+  useEffect(() => {
+    if (openAt === null) {
+      restoreFocusRef.current?.focus?.();
+      restoreFocusRef.current = null;
+      return;
+    }
+    // Only capture on the initial open, not when stepping between images.
+    if (!restoreFocusRef.current) restoreFocusRef.current = document.activeElement;
+    lightboxRef.current?.focus();
+  }, [openAt]);
 
   // Clamp rather than close when a filter shrinks the list under the open
   // index, so the lightbox never points past the end of the array.
@@ -82,6 +97,8 @@ export default function Gallery({ gallery }) {
           role="dialog"
           aria-modal="true"
           aria-label={current.caption}
+          ref={lightboxRef}
+          tabIndex={-1}
           onClick={() => setOpenAt(null)}
         >
           <button

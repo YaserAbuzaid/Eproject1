@@ -189,7 +189,8 @@ export default function Menu({ products, currency, onOpen }) {
           </div>
 
           <div className="bb-filters__meta">
-            <span>
+            {/* Announced to screen readers so filtering is not a silent change. */}
+            <span aria-live="polite" aria-atomic="true">
               Showing <strong>{visible.length}</strong> of {products.length} items
             </span>
             {dirty ? (

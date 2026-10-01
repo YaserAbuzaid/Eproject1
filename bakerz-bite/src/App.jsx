@@ -52,9 +52,13 @@ export default function App() {
 
   return (
     <>
+      <a className="bb-skip" href="#main">
+        Skip to content
+      </a>
+
       <Navbar active={active} />
 
-      <main>
+      <main id="main">
         <Hero site={site} />
         <Menu products={products} currency={currency} onOpen={setSelected} />
         <Merchandise
