@@ -1,0 +1,106 @@
+{
+  "offers": [
+    {
+      "id": "offer-morning-rush",
+      "title": "Morning Rush",
+      "headline": "Any coffee + any pastry for $6",
+      "description": "Walk in before 10 am and pair any handcrafted coffee with any pastry from the counter for a flat six dollars. No voucher needed, just ask at the till.",
+      "terms": [
+        "Valid Monday to Friday, 7 am to 10 am",
+        "Dine in or takeaway",
+        "One pastry and one coffee per person per visit",
+        "Cannot be combined with the Tenth Cup Free reward"
+      ],
+      "discountLabel": "From $6",
+      "validFrom": "2026-01-01",
+      "validTill": "2026-12-31",
+      "image": "/images/classic-cappuccino.jpg",
+      "badge": "Daily"
+    },
+    {
+      "id": "offer-baker-dozen",
+      "title": "Baker's Dozen",
+      "headline": "Buy 12 cookies, take 13",
+      "description": "Order any twelve cookies, mixed however you like, and the thirteenth is on the house. Boxed in our kraft gift box at no extra charge.",
+      "terms": [
+        "Applies to all cookie varieties",
+        "Mix and match permitted",
+        "Gift box included free",
+        "Available in store and by phone order"
+      ],
+      "discountLabel": "1 free",
+      "validFrom": "2026-01-01",
+      "validTill": "2026-12-31",
+      "image": "/images/chocolate-chip-cookie.jpg",
+      "badge": "Always on"
+    },
+    {
+      "id": "offer-celebration",
+      "title": "Celebration Cakes",
+      "headline": "15% off custom cakes ordered 7 days ahead",
+      "description": "Plan ahead and save. Any custom celebration cake ordered at least a week in advance takes fifteen percent off, including the hand-piped message and candles.",
+      "terms": [
+        "Minimum seven days notice required",
+        "Applies to 1 kg cakes and larger",
+        "Deposit of 50% payable on order",
+        "Design subject to confirmation with our decorator"
+      ],
+      "discountLabel": "15% off",
+      "validFrom": "2026-01-01",
+      "validTill": "2026-12-31",
+      "image": "/images/chocolate-truffle-cake.jpg",
+      "badge": "Pre-order"
+    },
+    {
+      "id": "offer-end-of-day",
+      "title": "End of Day Bread",
+      "headline": "Half price on all loaves after 6 pm",
+      "description": "We bake fresh every morning and refuse to sell day-old bread as fresh, so everything left on the shelf after six goes out at half price. First come, first served.",
+      "terms": [
+        "Daily from 6 pm until close",
+        "Subject to availability",
+        "Applies to breads only",
+        "No reservations or holds"
+      ],
+      "discountLabel": "50% off",
+      "validFrom": "2026-01-01",
+      "validTill": "2026-12-31",
+      "image": "/images/sourdough-loaf.jpg",
+      "badge": "Evening"
+    },
+    {
+      "id": "offer-loyalty",
+      "title": "Tenth Cup Free",
+      "headline": "Collect nine stamps, the tenth drink is free",
+      "description": "Every hot or cold drink earns a stamp on your Bakerz Bite card. Nine stamps and your tenth is free, whatever you choose, including the Belgian hot chocolate.",
+      "terms": [
+        "Physical card issued free at the counter",
+        "One stamp per drink purchased",
+        "Card does not expire",
+        "Free drink may be any item from the beverage menu"
+      ],
+      "discountLabel": "10th free",
+      "validFrom": "2026-01-01",
+      "validTill": "2026-12-31",
+      "image": "/images/belgian-hot-chocolate.jpg",
+      "badge": "Loyalty"
+    },
+    {
+      "id": "offer-weekend-box",
+      "title": "Weekend Family Box",
+      "headline": "Four pastries, a loaf and four drinks for $29",
+      "description": "Saturday and Sunday only. Pick any four pastries, any loaf from the bread shelf and four drinks, and we will box the lot for twenty-nine dollars.",
+      "terms": [
+        "Weekends only, while stocks last",
+        "Choice of any four pastries and any one loaf",
+        "Drinks include hot and iced options",
+        "Takeaway only"
+      ],
+      "discountLabel": "$29",
+      "validFrom": "2026-01-01",
+      "validTill": "2026-12-31",
+      "image": "/images/hero-2.jpg",
+      "badge": "Weekend"
+    }
+  ]
+}

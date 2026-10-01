@@ -1,0 +1,94 @@
+{
+  "gallery": [
+    {
+      "id": "g-counter",
+      "image": "/images/hero-1.jpg",
+      "caption": "The morning counter, before the first customer",
+      "tag": "Shop"
+    },
+    {
+      "id": "g-bread-display",
+      "image": "/images/french-baguette.jpg",
+      "caption": "Baguettes, batons and seeded loaves on the bread shelf",
+      "tag": "Breads"
+    },
+    {
+      "id": "g-kneading",
+      "image": "/images/gallery-1.jpg",
+      "caption": "Dough worked by hand at four in the morning",
+      "tag": "Behind the scenes"
+    },
+    {
+      "id": "g-loaves",
+      "image": "/images/gallery-2.jpg",
+      "caption": "Loaves resting after the bake",
+      "tag": "Breads"
+    },
+    {
+      "id": "g-cupcakes",
+      "image": "/images/gallery-3.jpg",
+      "caption": "Cupcakes finished with piped buttercream",
+      "tag": "Cakes"
+    },
+    {
+      "id": "g-wedding",
+      "image": "/images/gallery-4.jpg",
+      "caption": "A three-tier wedding cake ready for collection",
+      "tag": "Celebrations"
+    },
+    {
+      "id": "g-coffee-pastry",
+      "image": "/images/gallery-5.jpg",
+      "caption": "Morning coffee and fresh pastries",
+      "tag": "Café"
+    },
+    {
+      "id": "g-doughnuts",
+      "image": "/images/gallery-6.jpg",
+      "caption": "Chocolate-glazed doughnuts with sprinkles",
+      "tag": "Pastries"
+    },
+    {
+      "id": "g-birthday",
+      "image": "/images/gallery-7.jpg",
+      "caption": "Candles on, lights off",
+      "tag": "Celebrations"
+    },
+    {
+      "id": "g-window",
+      "image": "/images/gallery-8.jpg",
+      "caption": "The pastry window on a weekday afternoon",
+      "tag": "Shop"
+    },
+    {
+      "id": "g-assorted",
+      "image": "/images/hero-2.jpg",
+      "caption": "An assortment straight from the second bake",
+      "tag": "Pastries"
+    },
+    {
+      "id": "g-macarons",
+      "image": "/images/french-macaron.jpg",
+      "caption": "Macarons maturing before they go on sale",
+      "tag": "Cookies"
+    },
+    {
+      "id": "g-truffle",
+      "image": "/images/chocolate-truffle-cake.jpg",
+      "caption": "Mirror glaze poured on the truffle cake",
+      "tag": "Cakes"
+    },
+    {
+      "id": "g-croissants",
+      "image": "/images/butter-croissant.jpg",
+      "caption": "Croissants out of the seven o'clock bake",
+      "tag": "Pastries"
+    },
+    {
+      "id": "g-sourdough",
+      "image": "/images/sourdough-loaf.jpg",
+      "caption": "Country sourdough with a blistered crust",
+      "tag": "Breads"
+    }
+  ]
+}

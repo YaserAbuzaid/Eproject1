@@ -1,0 +1,90 @@
+{
+  "brand": "Bakerz Bite",
+  "motto": "Where smiles are served daily.",
+  "tagline": "A bakery and café serving more than 300 kinds of baked goods, made fresh in-store every single day.",
+  "about": {
+    "intro": "Since our launch, Bakerz Bite has grown into a neighbourhood bakery and café built on one stubborn idea: that good baking cannot be rushed and should never be faked.",
+    "story": "We bake everything in-store, every morning, starting at four. Our sourdough starter is older than our second shop. Our croissant dough is folded over three days. Nothing arrives frozen on a lorry, and nothing sits overnight pretending to be fresh.",
+    "promise": "We only use real butter, fresh cream and unbleached flour. We treat our customers as family, and we will not use an ingredient we would not want to feed our own.",
+    "values": [
+      {
+        "title": "Real ingredients",
+        "text": "Real butter, fresh dairy cream and unbleached flour. No margarine, no hydrogenated fat, no artificial colouring."
+      },
+      {
+        "title": "Baked fresh daily",
+        "text": "Every item is baked in-store the same morning it is sold. Bread left at the end of the day goes out at half price rather than back on the shelf."
+      },
+      {
+        "title": "Carefully sourced",
+        "text": "Belgian couverture chocolate, Ceylon cinnamon, free-range eggs and seasonal fruit chosen by what is actually good that week."
+      },
+      {
+        "title": "Served with a smile",
+        "text": "Our motto is not decoration. Every member of counter staff is trained to know every ingredient in every item we sell."
+      }
+    ],
+    "stats": [
+      { "value": "300+", "label": "Varieties baked" },
+      { "value": "4 am", "label": "Ovens on" },
+      { "value": "100%", "label": "Baked in-store" },
+      { "value": "12", "label": "Years serving" }
+    ]
+  },
+  "contact": {
+    "email": "hello@bakerzbite.com",
+    "ordersEmail": "orders@bakerzbite.com",
+    "phone": "+1 (555) 014-2287",
+    "whatsapp": "+1 (555) 014-2288",
+    "addressLines": [
+      "Bakerz Bite Bakery & Café",
+      "42 Flourmill Lane",
+      "Riverside Quarter",
+      "Springfield, 62704"
+    ],
+    "note": "This is a fictional bakery created for an academic eProject. All contact details are sample data."
+  },
+  "hours": [
+    { "days": "Monday to Friday", "open": "07:00", "close": "20:00" },
+    { "days": "Saturday", "open": "07:30", "close": "21:00" },
+    { "days": "Sunday", "open": "08:00", "close": "18:00" },
+    { "days": "Public holidays", "open": "09:00", "close": "16:00" }
+  ],
+  "social": [
+    { "label": "Instagram", "handle": "@bakerzbite", "href": "#instagram" },
+    { "label": "Facebook", "handle": "/bakerzbite", "href": "#facebook" },
+    { "label": "Pinterest", "handle": "@bakerzbite", "href": "#pinterest" },
+    { "label": "YouTube", "handle": "@bakerzbite", "href": "#youtube" }
+  ],
+  "sitemap": [
+    {
+      "group": "Shop",
+      "links": [
+        { "label": "Cakes", "href": "#menu" },
+        { "label": "Pastries", "href": "#menu" },
+        { "label": "Cookies", "href": "#menu" },
+        { "label": "Pies", "href": "#menu" },
+        { "label": "Breads", "href": "#menu" },
+        { "label": "Beverages", "href": "#menu" }
+      ]
+    },
+    {
+      "group": "Explore",
+      "links": [
+        { "label": "Merchandise", "href": "#merchandise" },
+        { "label": "Offers", "href": "#offers" },
+        { "label": "Gallery", "href": "#gallery" },
+        { "label": "Feedback", "href": "#feedback" }
+      ]
+    },
+    {
+      "group": "Company",
+      "links": [
+        { "label": "About Us", "href": "#about" },
+        { "label": "Contact Us", "href": "#contact" },
+        { "label": "FAQ", "href": "#faq" },
+        { "label": "Site Map", "href": "#sitemap" }
+      ]
+    }
+  ]
+}

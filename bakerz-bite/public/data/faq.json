@@ -1,0 +1,64 @@
+{
+  "faq": [
+    {
+      "id": "faq-fresh",
+      "q": "Is everything really baked fresh every day?",
+      "a": "Yes. Our ovens come on at four in the morning and every item on the shelf is baked that same day. Nothing is delivered frozen and nothing is held over to the next day. Bread still on the shelf after 6 pm is sold at half price rather than kept."
+    },
+    {
+      "id": "faq-allergens",
+      "q": "How do I find out about allergens?",
+      "a": "Every product page on this site lists its full ingredients and a separate allergen line. Click any item to open its detail window. In store, ask any member of counter staff; they are trained to know every ingredient in everything we sell."
+    },
+    {
+      "id": "faq-eggless",
+      "q": "Do you offer eggless or vegan options?",
+      "a": "We do. Use the dietary filter on the menu to show eggless, vegan and gluten-free items. Our breads are almost all vegan, and several pies use an egg-free crust. Custom eggless celebration cakes can be ordered with 48 hours notice."
+    },
+    {
+      "id": "faq-custom-cake",
+      "q": "Can I order a custom celebration cake?",
+      "a": "Yes, and if you order at least seven days ahead you take 15% off under our Celebration Cakes offer. Call or email us with the occasion, the number of guests and any design ideas, and our decorator will confirm the details with you. A 50% deposit secures the slot."
+    },
+    {
+      "id": "faq-notice",
+      "q": "How much notice do you need for a large order?",
+      "a": "For boxed cookies, macarons and pastries, 24 hours is usually enough. For celebration cakes we ask for seven days. For catering orders over 100 pieces, please give us two weeks so we can plan the bake schedule around it."
+    },
+    {
+      "id": "faq-delivery",
+      "q": "Do you deliver?",
+      "a": "We deliver within a ten kilometre radius of the shop for orders over $40. Cakes are delivered by hand in a stabilised box rather than by courier, because couriers and gateaux do not mix. Delivery slots are booked when you place the order."
+    },
+    {
+      "id": "faq-storage",
+      "q": "How should I store what I buy?",
+      "a": "It depends on the item, and each product page lists its own storage advice and shelf life. As a rule: cream and custard items go straight in the fridge, bread goes in a paper bag at room temperature and never in plastic, and cookies and shortbread keep best in an airtight tin."
+    },
+    {
+      "id": "faq-nut-free",
+      "q": "Can you make something nut-free?",
+      "a": "Several items are nut-free as standard and are marked as such in their allergen line. We can prepare a nut-free carrot cake with 24 hours notice. Please note that our kitchen handles nuts daily, so we cannot guarantee a completely nut-free environment for anyone with a severe allergy."
+    },
+    {
+      "id": "faq-loyalty",
+      "q": "How does the loyalty card work?",
+      "a": "Ask for a card at the counter; it is free. Every hot or cold drink earns one stamp. Nine stamps and your tenth drink is free, including the Belgian hot chocolate. The card does not expire and does not need an app."
+    },
+    {
+      "id": "faq-feedback",
+      "q": "Something was not right. What should I do?",
+      "a": "Tell us. Use the feedback form on this page, or call the shop and ask for the duty manager. If an item was not up to standard we will replace it or refund it, no argument and no receipt hunting."
+    },
+    {
+      "id": "faq-hours",
+      "q": "What are your opening hours?",
+      "a": "Monday to Friday 7 am to 8 pm, Saturday 7:30 am to 9 pm, Sunday 8 am to 6 pm, and public holidays 9 am to 4 pm. The full list is in the Contact section below, along with our address and phone number."
+    },
+    {
+      "id": "faq-wholesale",
+      "q": "Do you supply cafés and restaurants?",
+      "a": "We do supply a small number of local cafés with bread and pastries on a standing daily order. Email our orders address with your volumes and we will come back to you with what we can commit to without compromising the shop counter."
+    }
+  ]
+}

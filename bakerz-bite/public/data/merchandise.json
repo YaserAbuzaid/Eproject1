@@ -1,0 +1,149 @@
+{
+  "currency": "$",
+  "merchandise": [
+    {
+      "id": "merch-mug",
+      "name": "Bakerz Bite Ceramic Mug",
+      "category": "Mugs",
+      "price": 14.0,
+      "unit": "350 ml",
+      "image": "/images/merch-mug.svg",
+      "shortDescription": "Stoneware mug with the house wordmark, dishwasher safe.",
+      "description": "A chunky stoneware mug glazed in our house cream with the Bakerz Bite wordmark pressed into the side. Thick walls keep a cappuccino hot to the last mouthful, and the handle is sized for a whole hand rather than two fingers.",
+      "ingredients": [],
+      "allergens": [],
+      "specifications": {
+        "Capacity": "350 ml",
+        "Material": "Glazed stoneware",
+        "Dimensions": "9.5 cm tall, 8 cm diameter",
+        "Dishwasher": "Safe",
+        "Microwave": "Safe",
+        "Colours": "Cream, cocoa, sage"
+      },
+      "dietary": [],
+      "badges": ["bestseller"],
+      "rating": 4.7,
+      "reviews": 86
+    },
+    {
+      "id": "merch-tote",
+      "name": "Bakerz Bite Canvas Tote",
+      "category": "Bags",
+      "price": 18.0,
+      "unit": "each",
+      "image": "/images/merch-tote.svg",
+      "shortDescription": "Heavy cotton canvas tote with reinforced straps.",
+      "description": "Cut from 12 oz unbleached cotton canvas with box-stitched straps that will carry a full weekend shop without complaint. Screen printed by hand with the Bakerz Bite mark, so no two are identical.",
+      "ingredients": [],
+      "allergens": [],
+      "specifications": {
+        "Material": "12 oz unbleached cotton canvas",
+        "Dimensions": "38 cm x 42 cm",
+        "Strap drop": "27 cm",
+        "Capacity": "approx. 15 kg",
+        "Print": "Hand screen printed",
+        "Washing": "Cold machine wash"
+      },
+      "dietary": [],
+      "badges": [],
+      "rating": 4.6,
+      "reviews": 54
+    },
+    {
+      "id": "merch-glass",
+      "name": "Bakerz Bite Tumbler Glass",
+      "category": "Glasses",
+      "price": 11.0,
+      "unit": "400 ml",
+      "image": "/images/merch-glass.svg",
+      "shortDescription": "Etched tumbler for iced coffee and cold brew.",
+      "description": "A weighted-base tumbler with the Bakerz Bite monogram acid-etched rather than printed, so it will never wash off. Sized for a full iced latte with room for ice.",
+      "ingredients": [],
+      "allergens": [],
+      "specifications": {
+        "Capacity": "400 ml",
+        "Material": "Tempered soda-lime glass",
+        "Dimensions": "14 cm tall, 7.5 cm diameter",
+        "Finish": "Acid-etched monogram",
+        "Dishwasher": "Safe",
+        "Sold as": "Single or set of four"
+      },
+      "dietary": [],
+      "badges": [],
+      "rating": 4.5,
+      "reviews": 38
+    },
+    {
+      "id": "merch-tray",
+      "name": "Bakerz Bite Serving Tray",
+      "category": "Trays",
+      "price": 32.0,
+      "unit": "each",
+      "image": "/images/merch-tray.svg",
+      "shortDescription": "Oiled acacia tray with routed handles.",
+      "description": "Solid acacia with a food-safe oil finish and handles routed straight into the board rather than screwed on. Big enough for a cake stand and four cups, light enough to carry one-handed.",
+      "ingredients": [],
+      "allergens": [],
+      "specifications": {
+        "Material": "Solid acacia wood",
+        "Dimensions": "45 cm x 30 cm x 3 cm",
+        "Finish": "Food-safe mineral oil",
+        "Weight": "1.1 kg",
+        "Care": "Hand wash, re-oil occasionally",
+        "Engraving": "Logo branded into the underside"
+      },
+      "dietary": [],
+      "badges": [],
+      "rating": 4.8,
+      "reviews": 41
+    },
+    {
+      "id": "merch-apron",
+      "name": "Bakerz Bite Baker's Apron",
+      "category": "Aprons",
+      "price": 26.0,
+      "unit": "one size",
+      "image": "/images/merch-apron.svg",
+      "shortDescription": "Cross-back canvas apron with a split front pocket.",
+      "description": "The same apron our bakers wear. Cross-back straps take the weight off your neck, and the split front pocket holds a bench scraper and a thermometer without either falling out when you lean over.",
+      "ingredients": [],
+      "allergens": [],
+      "specifications": {
+        "Material": "10 oz cotton canvas",
+        "Fit": "One size, adjustable cross-back",
+        "Length": "85 cm",
+        "Pockets": "Split front pocket, side towel loop",
+        "Washing": "Machine wash warm",
+        "Colours": "Cocoa, sage"
+      },
+      "dietary": [],
+      "badges": ["new"],
+      "rating": 4.7,
+      "reviews": 29
+    },
+    {
+      "id": "merch-giftbox",
+      "name": "Bakerz Bite Gift Box",
+      "category": "Gifting",
+      "price": 8.5,
+      "unit": "each",
+      "image": "/images/merch-giftbox.svg",
+      "shortDescription": "Rigid presentation box with ribbon and gift card.",
+      "description": "A rigid kraft box lined with greaseproof paper, finished with a grosgrain ribbon and a blank card for your message. Fills with any twelve cookies or macarons of your choosing.",
+      "ingredients": [],
+      "allergens": [],
+      "specifications": {
+        "Dimensions": "24 cm x 18 cm x 7 cm",
+        "Material": "Rigid recycled kraft board",
+        "Lining": "Greaseproof paper",
+        "Holds": "12 cookies or 12 macarons",
+        "Includes": "Grosgrain ribbon and blank gift card",
+        "Recyclable": "Fully recyclable"
+      },
+      "dietary": [],
+      "badges": [],
+      "rating": 4.6,
+      "reviews": 63
+    }
+  ]
+}

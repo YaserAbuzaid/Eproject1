@@ -1,0 +1,98 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>README.md</title>
+<style>
+ body{font-family:Calibri,'Segoe UI',sans-serif;font-size:11pt;line-height:1.5;color:#222;margin:2cm}
+ h1{font-size:24pt;color:#3b2416;border-bottom:3px solid #c07a33;padding-bottom:6pt}
+ h2{font-size:17pt;color:#3b2416;margin-top:22pt;border-bottom:1px solid #ddd;padding-bottom:4pt}
+ h3{font-size:13pt;color:#5a3b25;margin-top:16pt}
+ h4{font-size:11.5pt;color:#5a3b25}
+ pre{font-family:Consolas,'Courier New',monospace;font-size:8pt;line-height:1.15;
+     background:#fbf7f1;border:1px solid #e3d6c6;padding:10pt;white-space:pre}
+ code{font-family:Consolas,'Courier New',monospace;font-size:9.5pt;background:#f3e2d0;padding:1pt 3pt}
+ table{border-collapse:collapse;width:100%;margin:10pt 0;font-size:10pt}
+ th,td{border:1px solid #c9b8a4;padding:5pt 7pt;text-align:left;vertical-align:top}
+ th{background:#3b2416;color:#fff7ec}
+ tr:nth-child(even) td{background:#fbf7f1}
+ hr{border:0;border-top:1px solid #ddd;margin:18pt 0}
+ ul{margin:6pt 0 6pt 18pt}
+ a{color:#c07a33}
+</style></head><body>
+<h1>Bakerz Bite — Bakery &amp; Café</h1>
+<p>A single-page, responsive website for the fictional bakery chain <strong>Bakerz Bite</strong>, built as an Aptech eProject.</p>
+<p>&gt; <em>Where smiles are served daily.</em></p>
+<hr/>
+<h2>Running the project</h2>
+<p>You need <strong>Node.js 20 or newer</strong> (built and tested on Node 22).</p>
+<pre>cd bakerz-bite
+npm install
+npm run dev</pre>
+<p>Then open the address Vite prints, normally <a href="http://localhost:5173">http://localhost:5173</a>.</p>
+<h3>Other commands</h3>
+<table><thead><tr><th>Command</th><th>What it does</th></tr></thead><tbody><tr><td><code>npm run dev</code></td><td>Start the development server with hot reload</td></tr><tr><td><code>npm run build</code></td><td>Produce an optimised build in <code>dist/</code></td></tr><tr><td><code>npm run preview</code></td><td>Serve the contents of <code>dist/</code> locally to check it</td></tr><tr><td><code>npm run lint</code></td><td>Run Oxlint over the source</td></tr></tbody></table>
+<h3>Important: it must be served over HTTP</h3>
+<p>This is a Vite + React application and it loads its data with <code>fetch()</code>. Opening <code>index.html</code> directly from the file system (<code>file://</code>) <strong>will not work</strong>, because browsers block <code>fetch()</code> on <code>file://</code> URLs. Always use <code>npm run dev</code>, or <code>npm run build</code> followed by <code>npm run preview</code>, or copy <code>dist/</code> onto any web server.</p>
+<hr/>
+<h2>How it is put together</h2>
+<pre>bakerz-bite/
+├── index.html                  page shell, title, meta, webfont links
+├── public/
+│   ├── data/                   the data store — plain JSON, no database
+│   │   ├── site.json           brand, about copy, contact details, site map
+│   │   ├── products.json       29 edible products
+│   │   ├── merchandise.json    6 branded merchandise items
+│   │   ├── offers.json         6 in-store offers
+│   │   ├── gallery.json        gallery images and captions
+│   │   └── faq.json            12 questions and answers
+│   └── images/                 photography + branded SVG mockups
+│       └── credits.json        source and licence for every photograph
+└── src/
+    ├── main.jsx                entry point, loads Bootstrap then the theme
+    ├── App.jsx                 composes every section, owns the modal state
+    ├── styles/theme.css        the entire visual theme in one file
+    ├── data/catalog.js         loads the JSON files, price/category helpers
+    ├── hooks/useSiteFeatures.js  visitor count, clock, geolocation, scroll spy
+    └── components/
+        ├── Logo.jsx            the wheat-and-cupcake mark, inline SVG
+        ├── Navbar.jsx          fixed nav, active states, visitor badge
+        ├── Hero.jsx            rotating banner
+        ├── Menu.jsx            product grid plus all the filters
+        ├── Merchandise.jsx     branded merchandise grid
+        ├── ProductModal.jsx    the product pop-up
+        ├── Offers.jsx          offer cards
+        ├── Gallery.jsx         masonry gallery with lightbox
+        ├── Feedback.jsx        feedback form and star rating
+        ├── About.jsx           brand story and values
+        ├── Faq.jsx             accordion
+        ├── Contact.jsx         contact details, hours, site map
+        ├── Footer.jsx          footer navigation
+        ├── Ticker.jsx          scrolling date / time / location strip
+        └── ui.jsx              shared pieces: cards, stars, badges, reveals</pre>
+<h3>Where the data lives</h3>
+<p>Everything shown on the page is read from the JSON files in <code>public/data</code> at runtime. There is no database and no backend. To change a price, add a cake or reword the FAQ, edit the JSON and refresh — no code change is needed.</p>
+<p>Two things are stored in the browser rather than in a file, because they are per-visitor:</p>
+<ul>
+<li><strong>Visitor count</strong> — <code>localStorage</code>, incremented once per browser session.</li>
+<li><strong>Submitted reviews</strong> — <code>localStorage</code>, so your own reviews survive a refresh.</li>
+</ul>
+<hr/>
+<h2>Requirements checklist</h2>
+<p>Every numbered item from the eProject specification, and where it is implemented.</p>
+<table><thead><tr><th>#</th><th>Requirement</th><th>Where</th></tr></thead><tbody><tr><td>1</td><td>Logo and banner with images of cakes, pastries, cookies</td><td><code>Logo.jsx</code>, <code>Hero.jsx</code></td></tr><tr><td>2</td><td>Sections for Cakes, Pastries, Cookies, Pies with several items</td><td><code>Menu.jsx</code> + <code>products.json</code> (29 items over 6 categories)</td></tr><tr><td>3</td><td>Clicking an item opens a pop-up with image, description, ingredients</td><td><code>ProductModal.jsx</code></td></tr><tr><td>4</td><td>Merchandise section with branded mugs, bags, glasses, trays</td><td><code>Merchandise.jsx</code> + <code>merchandise.json</code></td></tr><tr><td>5</td><td>Filters to help users select products</td><td><code>Menu.jsx</code> — search, category, dietary, price, sort</td></tr><tr><td>6</td><td>Gallery for viewing images</td><td><code>Gallery.jsx</code> — masonry grid with lightbox</td></tr><tr><td>7</td><td>Feedback and rating entered by the viewer</td><td><code>Feedback.jsx</code> — validated form, 5-star rating</td></tr><tr><td>8</td><td>Site map, Gallery, About Us, FAQ, Contact Us links</td><td><code>Navbar.jsx</code>, <code>Contact.jsx</code>, <code>Footer.jsx</code></td></tr><tr><td>9</td><td>About Us / Contact Us showing email, address, phone</td><td><code>About.jsx</code>, <code>Contact.jsx</code></td></tr><tr><td>10</td><td>Section listing offers with details</td><td><code>Offers.jsx</code> + <code>offers.json</code></td></tr><tr><td>11</td><td>Uniform colour combination throughout</td><td><code>theme.css</code> — one palette, all colours are CSS variables</td></tr><tr><td>12</td><td>Smooth navigation</td><td>Smooth scrolling, scroll-spy, fade-in reveals</td></tr><tr><td>✦</td><td>Scrolling ticker at the bottom with date, time and location</td><td><code>Ticker.jsx</code> + <code>useGeoLocation</code> (HTML5 Geolocation)</td></tr><tr><td>✦</td><td>Visitor count at top right beside the logo</td><td><code>Navbar.jsx</code> + <code>useVisitorCount</code></td></tr><tr><td>✦</td><td>Menu options change colour on hover and after clicking</td><td><code>.bb-nav__link</code> in <code>theme.css</code></td></tr><tr><td>✦</td><td>Fade in / fade out effects</td><td><code>.bb-reveal</code> + <code>useReveal</code></td></tr></tbody></table>
+<hr/>
+<h2>Notes on the geolocation ticker</h2>
+<p>The ticker uses the browser's HTML5 Geolocation API. The browser will ask for permission the first time the page loads. The ticker degrades in stages and never breaks:</p>
+<ul>
+<li>Permission granted and the lookup succeeds → a place name, e.g. <em>Chennai, Tamil Nadu, India</em>.</li>
+<li>Permission granted but the lookup fails (offline) → coordinates, e.g. <em>13.08°, 80.27°</em>.</li>
+<li>Permission refused → <em>Location access blocked</em>.</li>
+<li>Browser has no geolocation support → <em>Location not supported by this browser</em>.</li>
+</ul>
+<p>Turning coordinates into a place name uses the free, keyless BigDataCloud reverse-geocoding endpoint. If you would rather the page made no third-party request at all, delete the <code>fetch</code> block inside <code>useGeoLocation</code> in <code>src/hooks/useSiteFeatures.js</code> and the ticker will simply show coordinates.</p>
+<hr/>
+<h2>Image credits</h2>
+<p>Photographs come from <strong>Wikimedia Commons</strong> and are used under their respective Creative Commons licences. <code>public/images/credits.json</code> records the author, licence and source page for every photograph.</p>
+<p>The six merchandise images are <strong>not</strong> photographs. They are SVG mockups drawn for this project in the site's own palette, because the merchandise is supposed to carry Bakerz Bite branding, which no stock photograph can show. They are generated to be consistent with each other and are entirely original.</p>
+<hr/>
+<h2>Browser support</h2>
+<p>Tested in Chromium. Uses only widely supported platform features: CSS Grid, flexbox, custom properties, <code>IntersectionObserver</code>, <code>localStorage</code> and the Geolocation API. It respects <code>prefers-reduced-motion</code>, and the layout is built mobile-first with breakpoints at 991 px and 640 px.</p>
+</body></html>
